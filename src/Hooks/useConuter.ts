@@ -23,6 +23,7 @@ export const useConuter = ({ maxCount }: HookProps) => {
             .to(elementToAnimet.current, { y: 0, duration: 1, ease: 'bounce.out' })
             .pause()
     }, [])
+
     useEffect(() => {
         tl.current.play(0)
     }, [counter])
